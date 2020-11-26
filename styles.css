@@ -193,5 +193,6 @@ hr {
 
     li .link-secondary {
         display: table;
+        margin-bottom: 1rem;
     }
 }

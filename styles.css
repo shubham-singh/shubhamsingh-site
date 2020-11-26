@@ -190,4 +190,8 @@ hr {
         display: block;
         padding-inline-start: 0px;
     }
+
+    li .link-secondary {
+        display: table;
+    }
 }

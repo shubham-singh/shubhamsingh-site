@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles.css">
+    <title>internet</title>
+</head>
+
+<body>
+
+    <nav class="navigation">
+        <div class="nav-brand text-center">
+            <a class="link" href="../index.html">shubham singh</a>
+        </div>
+        <ul class="list-non-bullet nav-pills text-center">
+            <li class="list-item-inline"><a class="link" href="../index.html">home</a></li>
+            <li class="list-item-inline"><a class="link" href="../projects.html">projects</a></li>
+            <li class="list-item-inline"><a class="link link-active" href="../blogs.html">blogs</a></li>
+        </ul>
+    </nav>
+
+    <div class="hero container container-center">
+        <h1>How the internet works?</h1>
+        <br>
+        <img class="hero-img" src="images/internet.svg">
+        <br><br>
+        <p>How the internet works? Good question. But before we try to answer that first let's try to figure out what
+            the internet actually is.</p>
+        <p>The internet is a network of networks. Simple huh. So now you ask if I inter connect ten computers will it be
+            called internet. The answer is yes and no. See when I say network of networks, I mean thousands and
+            thousands of inter connected computer around the globe, not ten. Sure, you have an inter connected network
+            of computers but its not the internet.</p>
+
+        <p>Now that we know it's a network of networks, how do all these computers communicate without ever breaking
+            down? Let's try to understand how we human communicate. There are two things that are necessary in a
+            communication, first another person and second the language. You both need to understand some common
+            language, a standard of some kind which you both agree upon in order to converse or else it's going to fail.
+        </p>
+
+        <p>Just like us humans, computers also have some standard upon which they agree to exchange information. A
+            protocol of some kind. TCP/IP. These are two separate protocols but so similar that we usually say it in one
+            breath.</p>
+
+        <p>Ok now we know that computers communicate through some kind of protocol. But how do they find each other
+            between billions of other computers. Like we humans have home address which do not collide or at least are
+            not supposed to collide, similarly computers also have some kind of addresses, Internet Protocol address (IP
+            address) to be precise. An IP address is a numerical label assigned to each device connected to a computer
+            network that uses the Internet Protocol for communication. In layman's term, IP address is how computers
+            address each other.</p>
+
+        <p>We have the two necessary ingredients for communication. We have a way to uniquely identify the computer we
+            wanna talk to. And we have a protocol which both the computers agree upon. Now we just need to make this
+            information travel to the right destination, which is done by routers. Routers as you already guessed routes
+            the information to the next right computer which in turn passes the information forward repeating the
+            process till the final destination is reached.</p>
+
+        <p>Data is sent in many smaller packets as it is too inefficient to send it as a single file. Small packets of
+            information sometimes travel through different routes, some of which take longer than the others. If you
+            ever did two simultaneous speed tests and got different results, now you probably know why.</p>
+
+        <p>TCP/IP are two sets of convention that computers use to get data from one point to another. TCP also handles
+            delivery, if any data gets lost or fails to reach the destination TCP sends a message to resend the data.
+        </p>
+
+        <p>Now let's connect all the dots with an example. You want to go to Google, you type www.google.com in the
+            address bar of your browser and you get the google page in return. Here's what happened behind the scenes,
+            first the browser automatically converts your www.google.com to https://www.google.com.</p>
+        <ul>
+
+            <li class="list-non-bullet">HTTP is Hypertext Transfer Protocol, a protocol to transfer Hypertext Markup Language (HTML) document.</li>
+            
+            <br>
+            
+            <li class="list-non-bullet">World Wide Web (www) is just a human convention. It is not necessary to write that in address bar.</li>
+            
+            <br>
+
+            <li class="list-non-bullet">google.com is the domain name which then gets converted to IP address of the web server (just another computer) where google is hosted. A human readable address like google.com is converted to IP address like https://172.217.3.196 with the help of DNS server. DNS servers translate human-memorable domain names (example.com) into the corresponding numeric Internet Protocol (IP) addresses (93.184.216.34)</li>
+
+            <br>
+        </ul>
+
+        <p>HTTP has several request methods. GET and POST are two of them. GET literally means that get me this. When a computer requests for a website, this is generally how the request would look like.</p>
+        <ul class="list-non-bullet">
+            <li>GET / HTTP/1.1<br>HOST: www.google.com</li>
+        </ul>
+        <ul>
+            <li><strong>GET</strong> is the command.</li>
+            <li><strong>/</strong> means that you are requesting the home page of that website. Suppose you want google image search then you would pass <strong>/images</strong> instead of just <strong>/</strong> i.e https://www.google.com/images</li>
+            <li><strong>HTTP/1.1</strong> is the version of HTTP protocol</li>
+            <li><strong>HOST</strong> says I want home page of only google.com, in case that particular web server is hosting multiple websites.</li>
+        </ul>
+
+        <br>
+        <p>If the web server finds the requested page, it responds with</p>
+        <ul class="list-non-bullet">
+            <li>HTTP/1.1 200 OK<br>Content-Type: text/html</li>
+        </ul>
+        <ul>
+            <li><strong>HTTP/1.1</strong> is the HTTP version</li>
+            <li><strong>200</strong> is the status code. 200 being for success.</li>
+            <li><strong>Content-Type: text/html</strong> is the type of content returned. In this case it is returning html file.</li>
+        </ul>
+
+        <p>And this is how you get your google.com or facebook.com or any other site for that matter. All this is done in fraction of a second. Amazing isn't it.</p>
+    </div>
+
+    <footer class="footer">
+        <ul class="list-non-bullet">
+            <li class="list-item-inline">
+                <a class="link" href="https://twitter.com/i_shubhamsingh" target="_blank">twitter</a>
+            </li>
+            <li class="list-item-inline">
+                <a class="link" href="https://www.linkedin.com/in/shubham-singh" target="_blank">linkedin</a>
+            </li>
+            <li class="list-item-inline">
+                <a class="link" href="https://www.github.com/shubhamsng7" target="_blank">github</a>
+            </li>
+        </ul>
+    </footer>
+</body>
+
+</html>

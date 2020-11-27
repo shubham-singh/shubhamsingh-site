@@ -180,6 +180,9 @@ hr {
     margin-bottom: 3rem;
 }
 
+.link-margin {
+    margin-top: -1rem;
+}
 
 @media (max-width: 450px) {
     .navigation .nav-brand {

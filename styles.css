@@ -171,6 +171,10 @@ hr {
     color: var(--primary-color);
 }
 
+.text-focus-secondary {
+    color: var(--dark-grey)
+}
+
 .text-center {
     text-align: center;
 }

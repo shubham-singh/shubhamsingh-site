@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap');
+
+:root {
+    --primary-color: wheat;
+}
+
+body {
+    margin: 0;
+    background-color: var(--primary-color);
+    font-family: 'Source Code Pro', monospace;
+}
+
+nav {
+    padding: 1.1rem;
+    text-align: center;
+    background-color: black;
+    color: var(--primary-color);
+}
+
+textarea {
+    display: block;
+    margin: 3rem auto;
+    width: 60%;
+    padding: 1rem;
+    height: 15vh;
+}
+
+button {
+    display: block;
+    padding: 1rem;
+    margin: 2rem auto;
+    background-color: black;
+    color: var(--primary-color);
+    font-family: 'Source Code Pro', monospace;
+}
+
+@media (max-width: 700px) {
+    textarea {
+        width: 80%;
+        height: 20vh;
+    }
+}

@@ -4,6 +4,8 @@ var input = document.querySelector('#txt-input');
 
 var output = document.querySelector('#txt-output');
 
+var clear = document.querySelector('#btn-clear');
+
 var url = "https://api.funtranslations.com/translate/morse.json?text=";
 
 function errorHandler(error) {
@@ -20,4 +22,11 @@ function translate () {
     .catch(errorHandler);
 }
 
+function clearInput() {
+    input.value = '';
+    output.value = '';
+}
+
 button.addEventListener('click', translate);
+
+clear.addEventListener('click', clearInput);

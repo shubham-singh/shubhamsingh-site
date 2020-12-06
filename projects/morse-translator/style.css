@@ -8,6 +8,7 @@ body {
     margin: 0;
     background-color: var(--primary-color);
     font-family: 'Source Code Pro', monospace;
+    text-align: center;
 }
 
 nav {
@@ -23,12 +24,12 @@ textarea {
     width: 60%;
     padding: 1rem;
     height: 15vh;
+    font-size: 1.4rem;
 }
 
 button {
-    display: block;
     padding: 1rem;
-    margin: 2rem auto;
+    margin: 0.5rem;
     background-color: black;
     color: var(--primary-color);
     font-family: 'Source Code Pro', monospace;
@@ -37,6 +38,11 @@ button {
 @media (max-width: 700px) {
     textarea {
         width: 80%;
-        height: 20vh;
+        height: 15vh;
+    }
+
+    button {
+        display: block;
+        margin: 0.5rem auto;
     }
 }

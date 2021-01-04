@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Redressed&display=swap');
+
+body {
+    text-align: center;
+    margin: 0;
+    background: radial-gradient(#e66465, #9198e5);
+    background-attachment: fixed;
+}
+
+h1 {
+    font-family: 'Redressed', cursive;
+    padding: 1rem;
+    font-size: 3.5rem;
+}
+
+#content {
+    filter: blur(3px);
+}
+
+form {
+    margin: 3rem;
+}
+
+input {
+    text-align: center;
+    padding: 0.6rem;
+    border-radius: 2rem;
+    border-style: none;
+    font-size: 1rem;
+}
+
+input[type='button'], input[type='reset']
+{
+    padding: 0.6rem 1.5rem;
+}
+
+
+img {
+    display: none;
+    margin: 20px auto;
+    max-width: 100%;
+}
+
+#privacy {
+    position: fixed;
+    width: 100%;
+    padding: 1rem 0;
+    bottom: 0;
+    color: white;
+    font-size: 1.2rem;
+    background-color: black;
+    filter: none;
+}
+
+p {
+    margin-bottom: 1rem;
+}
+
+#btn-privacy {
+    border-style: none;
+    padding: 1rem 1.5rem;
+    border-radius: 3rem;
+    cursor: pointer;
+}
+
+ul {
+    padding-inline-start: 0;
+}
+
+li {
+    display: inline-block;
+    margin: 0.5rem;
+}
+
+#footer {
+    padding: 0.1rem 0;
+    width: 100%;
+    background-color: black;
+    display: none;
+    text-align: center;
+}
+
+a {
+    color: white;
+    font-size: 1.2rem;
+    text-decoration: none;
+}
+
+@media (max-width: 670px) {
+    input {
+        display: block;
+        margin: 0.7rem auto;
+    }
+}
